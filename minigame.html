@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Game Triết học Mác - Lênin</title>
+    <link rel="stylesheet" href="minigame.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="icon">📚</div>
+            <h1>TRIẾT HỌC MÁC - LÊNIN</h1>
+            <p>Học vui - Nhớ lâu - Ôn thi hiệu quả</p>
+        </header>
+
+        <div class="intro">
+            <h2>🎯 Thử thách kiến thức</h2>
+            <p>Trả lời 10 câu hỏi trắc nghiệm để kiểm tra kiến thức của bạn!</p>
+            <p>⭐ Mỗi câu trả lời đúng được 1 điểm.</p>
+        </div>
+
+        <div class="game">
+            <div class="info">
+                <span id="questionNumber">Câu 1/10</span>
+                <span id="score">⭐ Điểm: 0</span>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <h2 id="question">Câu hỏi sẽ xuất hiện ở đây</h2>
+
+            <div id="answers" class="answers"></div>
+
+            <p id="message">Hãy chọn một đáp án!</p>
+
+            <button id="nextBtn" disabled>Câu tiếp theo ➜</button>
+        </div>
+
+        <div id="result" class="result" hidden></div>
+
+        <footer>
+            Mini Game học tập | Triết học Mác - Lênin
+        </footer>
+    </div>
+
+    <script src="minigame.js"></script>
+</body>
+</html>
